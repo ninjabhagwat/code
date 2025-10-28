@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # ================== CONFIG ==================
-ACCESS_TOKEN = "eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiI0MkJOVUMiLCJqdGkiOiI2OGUzNTc4ZWNlOWM3OTZhZmM4YzQ4MzciLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc1OTcyOTU1MCwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzU5Nzg4MDAwfQ.FMx7rEIjneyXMj7HMYpC9JY-3gKtGU0-jWNtVnn8RRE"  # 🔑 Paste your valid Upstox access token here
+ACCESS_TOKEN = ""
 INPUT_CSV = r"C:\Niranjan\Personal\Stock_Price_pridiction\extracted_instrument_keys_nse_eq_filtered.csv"
 NSE_JSON = r"C:\Niranjan\Personal\Stock_Price_pridiction\NSE.json"
 OUT_CSV = r"C:\Niranjan\Personal\Stock_Price_pridiction\historical_15min_data.csv"
@@ -129,3 +129,4 @@ if records:
     print(f"\n✅ Wrote {len(df_out)} rows to {OUT_CSV}")
 else:
     print("\n⚠️ No candles fetched for any instrument.")
+
